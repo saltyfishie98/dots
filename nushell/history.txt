@@ -1,0 +1,600 @@
+exit
+config env
+config nu
+config env
+exit
+config env
+exit
+config env
+exit
+config nu
+exit
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 16 -d 'shell setup'
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number -d 'shell setup'
+snapper -c home create -t post -c number --pre-number 6 -d 'shell setup'
+snapper -c home ls
+snapper -c home status 6..7
+snapper -c root ls
+snapper -c root status 16..25
+cargo
+exit
+go env
+go env | find /home/saltyfishie/go
+snapper -c home ls
+snapper -c home delete 7
+snapper -c home ls
+config env
+exit
+go env
+exit
+go env
+config env | find /home/saltyfishie
+go env | find /home/saltyfishie/go
+go env | find /home/saltyfishie/
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 6 -d 'shell setup'
+snapper -c home ls
+snapper -c home status 6..7
+mkdir .src
+cd .src
+snapper -c home create -t pre -c number -d 'install tshakalekholoane/bat'
+snapper -c home ls
+snapper -c root create -t pre -c number -d 'install tshakalekholoane/bat'
+snapper -c root ls
+git clone https://github.com/tshakalekholoane/bat.git
+cd bat
+make build
+ls 
+ls bin
+sudo cp bin/bat /opt
+cd /opt
+ls
+ln -sf /opt/bat /usr/bin/batt
+sudo ln -sf /opt/bat /usr/bin/batt
+batt
+batt threshold 60
+sudo batt threshold 60
+sudo batt threshold 100
+cd ~
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 26 -d 'install tshakalekholoane/bat'
+snapper -c root ls
+snapper -c root status 26-27
+snapper -c root status 26..27
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 8 -d 'install tshakalekholoane/bat'
+snapper ls
+snapper -c home ls
+snapper -c home status 8..9
+batt threshold 60
+sudo batt threshold 60
+sudo batt persist
+snapper -c root ls
+snapper -c home ls
+exit
+batt threshold 100
+sudo batt threshold 100
+sudo batt persist
+sudo mount /media/backup
+sudo mount /dev/sdb /media/backup
+lsblk
+sudo mount /dev/sdb1 /media/backup
+ls /media/backup
+snapper -c root ls
+sudo btrfs subvol snapshot -r /.snapshots/27/snapshot/ /.snapshots/backups/user-base
+sudo btrfs send /.snapshots/backups/user-base/ -v | sudo btrfs receive /media/backup/root
+ls /media/backup/
+ls /media/backup/root
+sudo btrfs delete /media/backup/root/user-base/
+sudo btrfs subvol delete /media/backup/root/user-base/
+ls /media/backup/root
+sudo btrfs send /.snapshots/backups/user-base -v | sudo btrfs receive /media/backup/root -v
+ls /media/backup/root
+ls /media/backup/root/user-base/
+snapper -c home ls
+sudo btrfs subvol snapshot -r /home/.snapshots/9/snapshot /home/.snapshots/backups/user-base
+sudo btrfs send /home/.snapshots/backups/user-base -v | sudo btrfs receive /media/backup/home/user-base -v
+sudo btrfs send /home/.snapshots/backups/user-base -v | sudo btrfs receive /media/backup/home -v
+snapper -c home ls
+snapper -c root ls
+sudo vi /.snapshots/11/info.xml
+snapper -c root ls
+sudo vi /.snapshots/12/info.xml
+sudo vi /.snapshots/11/info.xml
+snapper -c root ls
+lsblk -p 
+lsblk -pf /dev/sda
+cat /etc/fstab
+lsblk -p /dev/sda
+sudo btrfs subvol list /
+snapper -c root ls
+snapper -c home ls
+snapper -c root create -t pre -c number -d 'kde desktop v1'
+snapper -c home create -t pre -c number -d 'kde desktop v1'
+snapper -c home ls
+snapper -c root ls
+sudo dnf install kvantum
+dnf search layan
+git clone https://github.com/Luwx/Lightly.git
+sudo dnf install lightly
+snapper -c root
+snapper -c root ls
+sudo snapper -c root undochange 31-32
+sudo snapper -c root undochange 31..32
+snapper -c root delete 31-32
+snapper -c root ls
+sudo btrfs subvol list /
+git clone https://github.com/paulmcauley/klassy.git
+git clone --recursive https://github.com/paulmcauley/klassy.git 
+snapper -c root ls
+snapper -c home ls
+snapper -c root create -t pre -c number -d 'install paulmcauley/klassy'
+snapper -c home create -t pre -c number -d 'install paulmcauley/klassy'
+snapper -c home ls
+snapper -c root ls
+sudo dnf install cmake extra-cmake-modules
+sudo dnf install "cmake(Qt5Core)" "cmake(Qt5Gui)" "cmake(Qt5DBus)" "cmake(Qt5X11Extras)" "cmake(KF5GuiAddons)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(KDecoration2)" "cmake(KF5CoreAddons)" "cmake(KF5ConfigWidgets)" "cmake(KF5IconThemes)" "cmake(KF5Package)" "cmake(Qt5Quick)" "cmake(KF5FrameworkIntegration)" "cmake(KF5KCMUtils)" "cmake(KF5Kirigami2)"
+snapper -c root ls
+snapper -c home ls
+git clone --recursive https://github.com/paulmcauley/klassy.git 
+cd klassy/
+cd .src/klassy/
+cat ./install.sh
+./install.sh
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 11 -d 'install paulmcauley/klassy'
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 31 -d 'install paulmcauley/klassy'
+snapper -c root ls
+sudo vi /.snapshots/34/info.xml
+snapper -c root ls
+dolphin /.snapshots/34/
+snapper -c root ls
+basg
+bash
+dolphin /.snapshots/34/
+snapper -c root ls
+dolphin /.snapshots/35/
+snapper -c root ls
+dolphin /.snapshots/34/
+snapper -c root ls
+sudo dnf install inkscape
+cd .local/share/plasma/
+ls
+cd /usr/share/plasma/desktoptheme/
+sudo cp default ~/.local/share/plasma/desktoptheme/
+sudo cp -r default ~/.local/share/plasma/desktoptheme/
+cd ~/.local/share/plasma/desktoptheme/
+exit
+cd ~/.local/share/plasma/desktoptheme/
+sudo rm -rf icons/
+sudo cp ../Maia_Transparent/icons .
+sudo cp -rf ../Maia_Transparent/icons .
+dolphin ~/.local/share/plasma/desktoptheme/
+cd .local
+cd /
+cd ~/.local/share/plasma/desktoptheme/
+sudo rm -rf Salty/
+sudo mv ~/Documents/Salty/ .
+sudo mv . ~/Documents/Salty/ 
+sudo mv ./Salty/ ~/Documents/
+sudo cp -r ~/Documents/Salty/ .
+sudo rm -rf Salty/
+sudo cp -r ~/Documents/Salty/ .
+sudo rm -rf Salty/
+sudo cp -r ~/Documents/Salty/ .
+sudo rm -rf Salty/
+sudo cp -r ~/Documents/Salty/ .
+sudo cp -rf ~/Documents/Salty/ .
+sudo cp -r ~/Documents/Salty/ .
+cd .local/share/plasma/
+sudo rm -rf Salty/
+cd .local/share/plasma/
+cd /usr/share/plasma/desktoptheme/
+cd ~
+sudo umount /media/backup
+mkdir wallpapers
+sudo vi /etc/updatedb.conf
+.config/baloofilerc
+code .config/baloofilerc
+balooctl disable; balooctl enable
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 28 -d 'kde desktop v1'
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 10 -d 'kde desktop v1'
+snapper -c home ls
+snapper -c home status 10..13
+snapper -c root ls
+snapper -c root status 28..39
+sudo batt threshold 60
+sudo batt persist
+cd .local/share/plasma/
+sudo batt threshold 100
+sudo batt persist
+snapper -c home ls
+snapper -c home delete 13
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 10 -d 'kde desktop v1'
+snapper -c home ls
+sudo mount /dev/sdb1 /media/backup
+cd /media/backup/
+ls
+cd ~
+snapper -c root ls
+sudo btrfs subvol snapshot -r /.snapshots/39/snapshot/ /.snapshots/backups/kde-desktop-v1
+sudo btrfs send /.snapshots/backups/kde-desktop-v1 -v | sudo btrfs receive /media/backup/root/ -v
+snapper -c home ls
+ls /media/backup/root/
+sudo btrfs subvol snapshot -r /home/.snapshots/13/snapshot /home/.snapshots/backups/kde-desktop-v1
+sudo btrfs send /home/.snapshots/backups/kde-desktop-v1 -v | sudo btrfs receive /media/backup/home -v
+ls /media/backup/home/
+ls /media/backup/home/kde-desktop-v1/
+ls /media/backup/home/kde-desktop-v1/saltyfishie/
+sudo umount /media/backup
+batt -h
+batt threshold
+batt threshold 60
+sudo batt threshold 60
+sudo batt persist
+snapper -c root ls
+snapper -c root create -t pre -c number -d 'install copr hyprland'
+snapper -c home undochange 14..15
+systemctl reboot
+dnf search hyprland
+sudo dnf update
+snapper -c home ls
+snapper -c home delete 14-15
+snapper -c home ls
+snapper -c root ls
+snapper -c root delete 40-45
+snapper -c root ls
+sudo dnf clean all
+sudo dnf update
+systemctl reboot
+snapper -c root ls
+sudo vi /etc/default/grub
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+sudo reboot
+snapper -c root ls
+snapper -c root create -t pre -c number -d 'install copr hyprland'
+snapper -c root ls
+snapper -c home ls
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t pre -c number -d 'install copr hyprland'
+snapper -c home ls
+sudo dnf update
+snapper -c root ls
+dnf copr enable solopasha/hyprland 
+sudo dnf copr enable solopasha/hyprland 
+sudo dnf update
+sudo dnf install hyprland
+sudo dnf install hyprland waybar
+snapper ls
+snapper -c root create -t post -c number --pre-number 42 -d 'install copr hyprland'
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 14 -d 'install copr hyprland'
+snapper -c home ls
+snapper -c home status 14..15
+snapper -c root ls
+snapper -c root status 42..47
+sudo dnf remove kitty
+sudo dnf install alacritty
+snapper -c root ls
+snapper -c root create -t pre -c number -d 'hyprland desktop v1'
+snapper -c home create -t pre -c number -d 'hyprland desktop v1'
+snapper -c root ls
+snapper -c home ls
+code .config
+sudo dnf install qt5ct
+code .config
+sudo dnf install obs-studio
+snapper -c root ls
+snapper -c root status 56..55
+snapper -c root ls
+snapper -c root undochange 55..56
+sudo snapper -c root undochange 55..56
+snapper ls
+snapper -c root delete 55-56
+sudo reboot
+waybar
+bash
+snapper -c home ls
+mv wofi ~/.config
+cd /usr/share/
+cd applications/
+ls | find mime
+sudo vi mimeinfo.cache
+sudo vi mimeapps.list
+sudo vi mimeinfo.cache
+cd /usr/share/xdg-desktop-portal/portals/
+ls
+sudo mv gtk.portal gtk.portal.bak
+ls
+sudo mv kde.portal kde.portal.bak
+ls
+vi /usr/share/applications/
+cd /usr/share/applications
+ls | find mime
+vi mimeinfo.cache
+ls | find dolphin
+vi mimeapps.list
+systemctl suspend
+hyprpaper
+sudo dnf install hyprpaper
+hyprpaper
+mkdir Projects
+cd Projects
+git clone --recursive https://github.com/saltyfishie98/battery-notify.git
+code .
+acpi
+bash
+exit
+cd .config/waybar/
+sudo dnf install dunst
+cd ..
+ls -a
+cd .cache
+ls
+cd .cache
+ls /usr/bin/ | grep batt
+sudo rm /usr/bin/batt
+batt threshold 60
+sudo ln -sf /opt/bat /usr/local/bin/batt
+batt threshold 
+sudo rm /usr/local/bin/batt
+sudo ln -sf /opt/bat /usr/bin/batt
+batt threshold 
+mv dunst ~/.config
+notify-send 'a' 'a'
+cd /usr/share/xdg-desktop-portal/portals/
+ls
+sudo mv kde.portal.bak kde.portal; sudo mv gtk.portal.bak gtk.portal; sudo mv hyprland.portal hyprland.portal.bak
+ls
+vi /usr/share/applications/mimeapps.list
+MOZ_ENABLE_WAYLAND=1 firefox
+vi /usr/share/applications/mimeinfo.cache
+vi /usr/share/applications/org.kde.dolphin.desktop
+sudo dnf install nautilus
+killall nautilus
+snapper -c root ls
+snapper -c root undochange 61..62
+sudo snapper -c root undochange 61..62
+nautilus
+hyprctl -h
+sudo dnf install xdg-desktop-portal
+cd /usr/share/xdg-desktop-portal/portals/
+ls
+killall firefox
+cat /usr/share/xdg-desktop-portal/portals/kde.portal
+cat /usr/share/xdg-desktop-portal/portals/hyprland.portal.bak
+snapper -c root ls
+nautilus
+sudo snapper -c root delete 61..62
+sudo snapper -c root delete 61-62
+nautilus
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 52 -d 'hyprland desktop v1'
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 16 -d 'hyprland desktop v1'
+snapper -c home ls
+snapper -c root ls
+snapper -c root delete 61
+snapper -c root ls
+cd /usr/share/xdg-desktop-portal/portals/
+ls
+sudo mv kde.portal kde.portal.bak; sudo mv gtk.portal gtk.portal.bak; sudo mv hyprland.portal.bak hyprland.portal
+snapper -c home ls
+snapper -c home delete 17
+cd /usr/share/xdg-desktop-portal/portals/
+ls
+killall xdg-desktop-portal
+sudo dnf install nautilus
+nautilus
+sudo dnf remove nautilus
+yum
+sudo dnf update
+dnf history
+sudo dnf clean all
+sudo dnf install nautilus
+sudo rm -rf /var/cache/dnf/* /var/lib/dnf/* /var/lib/yum/*
+snapper -c root ls
+sudo dnf install nautilus
+snapper -c root create
+snapper -c root status 60..61
+snapper -c root undochange 60..61
+sudo snapper -c root undochange 60..61
+sudo dnf install nautilus
+snapper -c root ls
+snapper -c root delete 61
+cd /usr/share/xdg-desktop-portal/portals/
+ls
+sudo mv gtk.portal.bak gtk.portal
+ls
+killall nautilus
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 52 -d 'hyprland desktop v1'
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 16 -d 'hyprland desktop v1'
+snapper -c home ls
+snapper -c home status 16..17
+snapper -c root ls
+snapper -c root status 62..63
+exit
+cd .cache
+waybar
+snapper -c root ls
+snapper -c root delete 63
+sudo ln -sf /home/saltyfishie/Projects/battery-notify/target/release/battery-notify /usr/local/bin/battery-notify
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 52 -d 'hyprland desktop v1'
+snapper -c root ls
+snapper -c home ls
+snapper -c home delete 17
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 16 -d 'hyprland desktop v1'
+snapper -c home ls
+dnf repository -h
+dnf repository-packages -h
+dnf repolist
+dnf repository-packages copr:copr.fedorainfracloud.org:solopasha:hyprland 
+dnf repository-packages copr:copr.fedorainfracloud.org:solopasha:hyprland list
+sudo rm /usr/bin/batt
+sudo ln -sf /opt/bat /usr/local/bin/batt
+batt threshold 
+snapper -c root ls
+snapper -c root create -d 'mv bat symlink to /usr/local/bin'
+snapper -c root ls
+batt threshold 
+snapper -c root ls
+snapper -c home ls
+snapper -c root create -t pre -c number -d 'setup clipboard manager'
+sudo snapper -c home undochange 18..19
+sudo dnf install wl-clipboard
+snapper -c root ls
+sudo snapper -c root undochange 65..70
+sudo dnf install wl-clipboard
+dnf clean all
+sudo dnf install wl-clipboard
+snapper -c root ls
+sudo snapper -c root undochange 64..70
+whereis batt
+cat .bashrc
+dnf clean all
+sudo dnf install wl-clipboard
+sudo rpm --rebuilddb
+sudo dnf clean all
+sudo rpm --rebuilddb
+snapper -c root ls
+sudo dnf update
+sudo dnf install wl-clipboard
+rofu
+rofi
+snapper -c root ls
+snapper -c root delete 65-70
+snapper -c root ls
+snapper -c home ls
+cat .bashrc
+snapper -c home delete 18-19
+snapper -c home ls
+sudo dnf update
+snapper -c root ls
+snapper -c root create -t pre -c number -d 'setup clipboard manager'
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t pre -c number -d 'setup clipboard manager'
+snapper -c home ls
+code .bashrc
+go env
+source .bashrc
+bash 
+wl-paste
+go install go.senan.xyz/cliphist@latest
+cliphist
+exit
+cliphist
+bash
+config env
+cliphist
+bash -c cliphist
+snapper -c home ls
+snapper -c home create -t post -c number --pre-number 18 -d 'setup clipboard manager'
+snapper -c root ls
+snapper -c root create -t post -c number --pre-number 67 -d 'setup clipboard manager'
+snapper -c root ls
+snapper -c home ls
+code Projects/battery-notify/
+ls -al ~/.ssh
+ssh-keygen -t ed25519 -C "teugene888@gmail.com"
+eval "$(ssh-agent -s)"
+bash 
+cd Projects/battery-notify/
+git push origin main
+cd ..
+git clone --recursive git@github.com:saltyfishie98/battery-notify.git a
+ls
+cd battery-notify/
+git push origin main
+sudo rm -rf .git/
+rm -rf .git
+git status
+cp -r ../a/.git/ .
+git staus
+git status
+cargo build --release
+git push origin main
+snapper -c home ls
+sudo dnf install obs-studio
+obs-studio
+sudo dnf reinstall obs-studio
+obs-studio
+exit
+obs-studio
+/usr/bin/obs
+sudo dnf remove obs-studio
+sudo dnf install obs-studio
+obs-studio
+obs
+sudo dnf remove obs-studio
+ls /usr/share/xdg-desktop-portal/portal
+ls /usr/share/xdg-desktop-portal/portals/
+sudo dnf install obs-studio
+obs
+sudo ldconfig
+obs
+dnf provides */libobs-frontend-api.so
+dnf provides */libobs-frontend-api.so.0
+sudo dnf install obs-studio-libs
+sudo dnf reinstall obs-studio-libs
+obs
+cd ~/Projects/battery-notify/
+exit
+snapper -c home ls
+batt threshold 100
+sudo batt threshold 100
+waybar
+bash 
+cd .aaa
+cd .local/share/plasma/desktoptheme/MacVentura-Dark/
+cliphist wipe
+rm .cache
+rm .cache/battery-notify/cache.txt
+snapper -c root ls
+sudo dnf remove obs-studio
+sudo dnf remove obs-studio; sudo dnf autoremove; sudo dnf clean packages
+snapper -c ls
+snapper -c root ls
+snapper -c home ls
+snapper -c home create -t pre -c number -d 'change to rofi'
+snapper -c root create -t pre -c number -d 'change to rofi'
+snapper -c root ls
+snapper -c home create -t pre -c number -d 'change to rofi'
+snapper -c home ls
+snapper -c delete 21
+snapper -c home delete 21
+snapper -c home ls
+sudo dnf install rofi
+cd .src
+git clone --recursive https://github.com/adi1090x/rofi.git
+cd rofi/
+cat setup.sh
+bash setup.sh
+code ~/.config
+git status
+git init
+rm -rf .git
+git config --global init.defaultBranch main
+git init
+git status
+cd ..
+cd ~/.config/
+git status
+systemctl suspend
+git status
